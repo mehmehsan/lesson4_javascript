@@ -8,7 +8,7 @@ btnTranslate.addEventListener("click", clickHandler);
 
 
 function clickHandler() {
-
-    outputDiv.innerText = " ajs"+txtInput.value[0]+ txtInput.value +"ahh";
+    console.log("clicked");
+    outputDiv.innerText = " ajs"+txtInput.value[0]+" " + txtInput.value +"ahh";
 } 
 

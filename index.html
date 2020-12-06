@@ -5,38 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <meta name="robots" content="noindex" /> -->
     <title>Banana speak</title>
+    <link href="style.css" rel="stylesheet">
 
-    <style>
-        textarea {
-            width: 90%;
-            display: block;
-            margin: 1rem;
-            padding: 1rem;
-            height: 10vh;
-        }
-
-        #output{
-            border: 1px solid black;
-            height: 10vh;
-            width: 80%;
-            margin: 1rem;
-            padding: 1rem;
-        }
-    </style>
-      
+          
 </head>
-<body>
-    
-    
-    <h1>talk bananaaa</h1>
+<body class="sectionall">
+    <header class="header">talk banana<img src="minion.svg" height="60px" width="60px" style="padding-left: 1rem;"></header>
 
-    <textarea id="txt-input" placeholder="Type your keys here to convert into bananaaa language"></textarea>
+    <div style="padding: 1rem;"></div>
 
-    <button id="btntranslate"> Translate</button>
-    <div style="fontsize : large"> Output will come here ⬇️ </div>
+    <textarea id="txt-input" placeholder="Type your keys here to convert into bananaaa language" ></textarea>
+
+    <button id="btntranslate"> Translate To Banana</button>
+    <div style="fontsize : large; margin: 2rem 4rem;"> Output will come here ⬇️ </div>
     <div id="output"></div>
     </div>
-    <a href="demo.html">demo</a>
+    <!-- <a href="demo.html">comming soon !</a> -->
+    <div style="padding: 1rem;"></div>
+
+    <footer class="footer">
+        <h2>about</h2>
+        <p>Yo! <strong>minions</strong> are here, if you want to talk to them with banana language. Enjoy this translator, share with the friends and talk to each-other and finally you become minion.😂</p>
+    </footer>
 
     <script src="app.js" type="text/javascript"></script>
 </body>

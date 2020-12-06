@@ -14,22 +14,28 @@ textarea {
     margin: auto;
     height: 10vh;
     display: block;
+    background-color: red;
+    border: 5px solid black;
+    font-family: 'Yeon Sung';
+    font-size: 3rem;
 }
 
 .subject {
     text-align: center;
     font-size: 8rem;
+    padding: 2rem 2rem;
 }
 
 #btn {
     background-color: var(--primary-color);
     padding: 1rem 1rem;
     margin: 2rem 7.5rem;
-
+    font-family: 'Yeon Sung';
+    font-size: 2rem;
 }
 
 #Translated {
-    border: 1px solid orange;
+    border: 5px solid black;
     display: block;
     height: 10vh;
     width: 85%;

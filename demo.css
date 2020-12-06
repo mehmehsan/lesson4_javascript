@@ -25,6 +25,9 @@ textarea {
     font-size: 8rem;
     padding: 2rem 2rem;
 }
+.ship {
+    float: right;
+}
 
 #btn {
     background-color: var(--primary-color);
@@ -97,6 +100,6 @@ textarea {
 }
 
 .footer{
-    padding: 1rem 1rem;
-    margin: auto;
+   margin: auto;
+   text-align: center;
 }

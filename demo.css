@@ -16,6 +16,11 @@ textarea {
     display: block;
 }
 
+.subject {
+    text-align: center;
+    font-size: 8rem;
+}
+
 #btn {
     background-color: var(--primary-color);
     padding: 1rem 1rem;
@@ -83,4 +88,9 @@ textarea {
         
             transform: rotate(90deg);
     }
+}
+
+.footer{
+    padding: 1rem 1rem;
+    margin: auto;
 }

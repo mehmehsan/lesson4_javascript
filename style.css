@@ -41,17 +41,15 @@
     border: none;
 }
 textarea {
-    width: 90%;
+    width: 80%;
     display: block;
     margin: auto;
-   
-    height: 100%;
-}
+}   
 
 #output{
     border: 1px solid black;
     height: 10vh;
-    width: 90%;
+    width: 80%;
     display: block;
     margin: auto;
     padding: 1rem 1rem;

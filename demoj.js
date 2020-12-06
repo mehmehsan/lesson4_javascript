@@ -1,34 +1,30 @@
 var Button = document.querySelector("#btn");
+var Inputlan = document.querySelector("#InputLang");
+var trans = document.querySelector("#Translated");  
 
+var serverURL = "https://api.funtranslations.com/translate/pirate.json";
 
-Button.addEventListener("click", eventHandler);
+function getTranslationURL(input) {
+  return serverURL + "?" + "text=" + input
+}
+
+function errorHandler(error) {
+  alert("Something wrong with server")
+}
+
 
 function eventHandler() {
-   var nd = document.createElement("SELECT");
-   nd.setAttribute("id","mySelect");
- 
-   document.body.appendChild(nd);
+  var inputText = Inputlan.value; 
 
- var optn1 = document.createElement("option");
- var optn2 = document.createElement("option");
- var optn3 = document.createElement("option");
- 
+  
+  fetch(getTranslationURL(inputText))
+      .then(response => response.json())
+      .then(json => {
+          var translatedText = json.contents.translated;
+          trans.innerText = translatedText; // output
+         })
+      .catch(errorHandler)
+};
 
- optn1.setAttribute("value","Animal");
-
- var optntxt1 = document.createTextNode("Animal language");
- var optntxt2 = document.createTextNode("Check leap year");
- var optntxt3 = document.createTextNode("Check your birthday");
-
-
- optn1.appendChild(optntxt1);
- optn2.appendChild(optntxt2);
- optn3.appendChild(optntxt3);
-
-
- document.getElementById("mySelect").appendChild(optn1);
- document.getElementById("mySelect").appendChild(optn2);
- document.getElementById("mySelect").appendChild(optn3);
-
-}
+Button.addEventListener("click", eventHandler)
 
